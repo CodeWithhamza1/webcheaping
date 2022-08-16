@@ -34,6 +34,12 @@ Grey #ECF0F1
   General Styling 
 ********************************************************* */
 
+html{
+  scroll-behavior: smooth;
+}
+
+
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
