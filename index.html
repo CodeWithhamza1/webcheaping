@@ -317,56 +317,76 @@
     </svg>
 
     <!-- Quotes Section -->
-    <div class="wrap services-wrap">
-        <section class="grid grid-pad">
-            <div class="col-1-1 service-box cl-client-carousel-container">
-                <div class="content">
-                    <div class="cl-client-carousel">
+    <div class="slideshow-container">
 
-                        <div class="item client-carousel-item">
-                            <!-- Start of item -->
-                            <div class="quotes-icon">
-                                <i class="icon-quotes-left"></i>
-                            </div>
-                            <p>Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the
-                                styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some
-                                changes and improvements. A key change is the division of standard into separate
-                                modules, which makes it easier to learn and understand.CSS3 is the latest version of the
-                                CSS specification. CSS3 adds several new styling features and improvements to enhance
-                                the web presentation capabilities.</p>
-                            <h4>(Mahar Hamza)</h4>
-                        </div><!-- End of item -->
+        
+            <i class="icon-quotes-left"></i>
+        <style>
+            .icon-quotes-left{
+                color: #16a085;
+                background-size: cover;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+        </style>
 
-                        <div class="item client-carousel-item">
-                            <!-- Start of item -->
-                            <div class="quotes-icon">
-                                <i class="icon-quotes-left"></i>
-                            </div>
-                            <p>JavaScript, often abbreviated JS, is a programming language that is one of the core
-                                technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites
-                                use JavaScript on the client side for web page behavior, often incorporating third-party
-                                libraries.It is a high-level, often just-in-time compiled language that conforms to the
-                                ECMAScript standard. ... It has dynamic typing, prototype-based object</p>
-                            <h4>(Mahar Hamza)</h4>
-                        </div><!-- End of item -->
-                        <div class="item client-carousel-item">
-                            <!-- Start of item -->
-                            <div class="quotes-icon">
-                                <i class="icon-quotes-left"></i>
-                            </div>
-                            <p>HTML5 is a markup language used for structuring and presenting content on the World Wide
-                                Web. It is the fifth and final major HTML version that is a World Wide Web Consortium
-                                recommendation. The current specification is known as the HTML Living Standard.HTML5 is
-                                the 5th version or update of HTML. This is the most advanced HTML programming. In this
-                                version lot of tags were added to make the designer's life .</p>
-                            <h4>(Fasi-ul-Rehman)</h4>
-                        </div><!-- End of item -->
+        <div class="mySlides">
+          <q>Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes and improvements. A key change is the division of standard into separate modules, which makes it easier to learn and understand.CSS3 is the latest version of the CSS specification. CSS3 adds several new styling features and improvements to enhance the web presentation capabilities.</q>
+          <p class="author">Mahar Hamza</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.It is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. ... It has dynamic typing, prototype-based object</q>
+          <p class="author">Mahar Hamza</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major HTML version that is a World Wide Web Consortium recommendation. The current specification is known as the HTML Living Standard.HTML5 is the 5th version or update of HTML. This is the most advanced HTML programming. In this version lot of tags were added to make the designer's life .</q>
+          <p class="author">Mahar Hamza</p>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+
     <!-- End Quotes Section -->
 
     <!-- CurveDown -->
