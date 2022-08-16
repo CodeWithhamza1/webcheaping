@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            
+            background: rgba(0,0,0,0.85);
+        }
+        h1{
+            line-height: .4;
+            text-align: center;
+            font-size: 3.6rem;
+            margin-top: 50px;
+            letter-spacing: 5px;
+            color: whitesmoke;
+            font-family: cursive;
+        }
+        .main{
+            width: 70%;
+            height: 400px;
+            left: 50%;
+            top: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image:url('img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(19\).jpg');
+            background-size: 100% 100%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-shadow: 1px 2px 7px 4px rgb(218, 206, 208);
+            animation: slider 28s infinite linear; 
+            animation-delay: all 1s;
+        }
+        @keyframes slider {
+            0%{
+                background-image: url('img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(16\).jpg');
+            }
+            14.3%{
+                background-image: url(img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(17\).jpg);
+            }
+            28.6%{
+                background-image: url(img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(18\).jpg);
+            }
+            42.9%{
+                background-image: url(img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(28\).jpg);
+            }
+            57.2%{
+                background-image: url(img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(15\).jpg);
+            }
+            71.5%{
+                background-image: url(img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(19\).jpg);
+            }
+            85.8%{
+                background-image: url(img/Beautiful\ And\ Amazing\ Animals\ And\ Birds\ Wallpapers\ Set-52\ \(28\).jpg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p><h1>CSS Animation Slider</h1></p>
+    <div class="main">
+        
+    </div>
+</body>
+</html>

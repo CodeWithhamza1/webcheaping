@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto, sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #fbe0e7;
+    }
+    .card{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: #fff;
+        transform-style: preserve-3d;
+        transition: 1s;
+        transform: perspective(1000px);
+        box-shadow: 10px 20px 40px rgba(0, 0, 0, .20);
+        border-radius: 20px;
+    }
+    .card:hover{
+        transform: translateX(50%);
+    }
+    .card .imgBox{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        transform-origin: left;
+        transform-style: preserve-3d;
+        background: #000;
+        transition: 1s;
+        box-shadow: 10px 20px 40px rgba(0, 0, 0, .20);
+        border-radius: 20px;
+    }
+    .card:hover .imgBox{
+        transform: rotateY(-180deg);
+    }
+    .card .imgBox img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        border-radius: 20px;
+    }
+    .card .imgBox img:nth-child(2){
+        transform: rotateY(180deg);
+        border-radius: 20px;
+    }
+    .card .details{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+    .card .details .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .card .details .content h2{
+        text-align: center;
+        font-weight: 700;
+        line-height: 1em;
+        border-radius: 20px;
+    }
+    .card .details .content h2 span{
+        color: #e21213;
+        font-size: 0.8em;
+        border-radius: 20px;
+    }
+     a{
+        text-decoration: none;
+        color: darkred;
+        font-size: 25px;
+        display: flex;
+        margin-top: 8px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family:Cambria;
+    }
+    a:hover{
+        color: darkorange;
+        cursor: pointer;
+        font-weight: bolder;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="imgBox"><img src="hamza.jpg" alt="">
+        <img src="hamza2.gif" alt=""></div>
+        <div class="details">
+        <div class="content">
+        <h2>MAHAR HAMZA <br> <span>Professional Programmer & Designer</span></h2><br><span><h4>Hi... I am a Professional Css Master and Programmer Contact Us at 03000000000 or join us at <a class="fb" href="https://www.Facebook.com/Mahar Hamza">Facebook</a></h4></span>
+    </div></div></div>
+</body>
+</html>
