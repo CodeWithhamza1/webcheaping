@@ -444,6 +444,7 @@ blockquote p {
 .kaka {
   font-size: 3.3rem !important;
   font-weight: 800 !important;
+	letter-spacing: 3px;
 	font-family: 'DynaPuff', cursive;
   animation: helloo 15s infinite linear !important;
 }
@@ -1037,6 +1038,7 @@ blockquote p {
   line-height: 1.8em;
   width: 80%;
   margin: 10px auto;
+	font-family: 'Aboreto', cursive;
 }
 
 .cl-client-carousel.owl-theme .owl-controls .owl-page span {
@@ -1325,6 +1327,7 @@ blockquote p {
   width: 100%;
   height: 700px;
   overflow: hidden;
+filter: invert(70%);
 }
 
 #google-container {
@@ -1428,7 +1431,7 @@ address i {
   margin-bottom: 3px;
   color: #484f58;
   font-size: 1.125em;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: 'Aboreto', cursive;
 }
 
 .phone {
