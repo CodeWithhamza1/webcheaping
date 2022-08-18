@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+   * {
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      text-transform: uppercase;
+
+   }
+
+
+   body {
+      background: rgba(0, 0, 0, 0.50);
+   }
+
+
+   h2 {
+
+      font-size: 1.7em;
+
+      text-align: center;
+
+      margin: 50px auto;
+
+      animation: colr 2s linear infinite;
+
+      transition-delay: all .3s;
+
+   }
+
+   @keyframes colr {
+      10% {
+         color: burlywood;
+         transform: rotate(1deg);
+      }
+
+      50% {
+         color: plum;
+         transform: rotate(-1deg);
+      }
+
+      100% {
+         color: rgb(253, 156, 11);
+         transform: rotate(1deg);
+      }
+
+   }
+
+
+   .circle {
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      padding: 100px;
+
+      height: 250px;
+
+      width: 900px;
+
+      border-radius: 10px;
+
+      margin: 20px auto;
+   }
+
+
+   #btn,
+   #btn1,
+   #btn2,
+   #btn3,
+   #btn4,
+   #btn5,
+   #btn6,
+   #btn7,
+   #btn8,
+   #btn9,
+   #btn10,
+   #btn11,
+   #btn12,
+   #btn13,
+   #btn14,
+   #btn15,
+   #btn16,
+   #btn17,
+   #btn18,
+   #btn19,
+   #btn20 {
+      display: inline-block;
+
+      color: rgb(48, 45, 45);
+
+      background-color: rgb(233, 187, 187);
+
+      width: 170px;
+
+      height: 33px;
+
+      margin: 10px 10px;
+
+      text-align: center;
+
+      border: 1px solid gray;
+
+      border-radius: 10px;
+
+      font-size: 1em;
+
+      cursor: pointer;
+
+      box-shadow: 0 10px 10px rgba(231, 171, 60, 0.867), 0 10px 10px rgba(231, 171, 60, 0.867);
+   }
+
+   #btn:hover,
+   #btn1:hover,
+   #btn2:hover,
+   #btn3:hover,
+   #btn4:hover,
+   #btn5:hover,
+   #btn6:hover,
+   #btn7:hover,
+   #btn8:hover,
+   #btn9:hover,
+   #btn10:hover,
+   #btn11:hover,
+   #btn12:hover,
+   #btn13:hover,
+   #btn14:hover,
+   #btn15:hover,
+   #btn16:hover,
+   #btn17:hover,
+   #btn18:hover,
+   #btn19:hover,
+   #btn20:hover {
+
+      -webkit-animation: rubberBand .8s 1;
+      -moz-animation: rubberBand .8s 1;
+      -o-animation: rubberBand .8s 1;
+      animation: rubberBand .8s 1;
+   }
+
+   @-webkit-keyframes rubberBand {
+      0% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+      }
+
+      30% {
+         -webkit-transform: scale3d(1.15, 0.9, 1);
+         transform: scale3d(1.15, 0.9, 1);
+      }
+
+      40% {
+         -webkit-transform: scale3d(0.8, 1.15, 1);
+         transform: scale3d(0.8, 1.15, 1);
+      }
+
+      50% {
+         -webkit-transform: scale3d(1.15, 0.85, 1);
+         transform: scale3d(1.15, 0.85, 1);
+      }
+
+      65% {
+         -webkit-transform: scale3d(.95, 1.05, 1);
+         transform: scale3d(.95, 1.05, 1);
+      }
+
+      75% {
+         -webkit-transform: scale3d(1.05, .95, 1);
+         transform: scale3d(1.05, .95, 1);
+      }
+
+      100% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+      }
+   }
+
+   @keyframes rubberBand {
+      0% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+      }
+
+      30% {
+         -webkit-transform: scale3d(1.15, 0.9, 1);
+         transform: scale3d(1.15, 0.9, 1);
+      }
+
+      40% {
+         -webkit-transform: scale3d(0.8, 1.15, 1);
+         transform: scale3d(0.8, 1.15, 1);
+      }
+
+      50% {
+         -webkit-transform: scale3d(1.15, 0.85, 1);
+         transform: scale3d(1.15, 0.85, 1);
+      }
+
+      65% {
+         -webkit-transform: scale3d(.95, 1.05, 1);
+         transform: scale3d(.95, 1.05, 1);
+      }
+
+      75% {
+         -webkit-transform: scale3d(1.05, .95, 1);
+         transform: scale3d(1.05, .95, 1);
+      }
+
+      100% {
+         -webkit-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+      }
+   }
+</style>
+
+<body>
+   <h2>Click Any Of Button To Display The color On The Screen 🤩</h2>
+   <span class="circle" id="change"></span>
+
+   <button id="btn">Green</button>
+
+   <button id="btn1">Purplle</button>
+
+   <button id="btn2">Violet</button>
+
+   <button id="btn3">Pink</button>
+
+   <button id="btn4">Brown</button>
+
+   <button id="btn5">Red</button>
+
+   <button id="btn6">Aqua</button>
+
+   <button id="btn7">Chocolate</button>
+
+   <button id="btn8">Crimson</button>
+
+   <button id="btn9">Coral</button>
+
+   <button id="btn10">chartreuse</button>
+
+   <button id="btn11">cornflowerblue</button>
+
+   <button id="btn12">yellowgreen</button>
+
+   <button id="btn13">burlywood</button>
+
+   <button id="btn14">turquoise</button>
+
+   <button id="btn15">thistle</button>
+
+   <button id="btn16">teal</button>
+
+   <button id="btn17">rosybrown</button>
+
+   <button id="btn18">olive</button>
+
+   <button id="btn19">orangered</button>
+
+   <button id="btn20">rebeccapurple</button>
+
+   <script>
+
+      const btn = document.getElementById('btn');
+
+      const btn1 = document.getElementById('btn1');
+
+      const btn2 = document.getElementById('btn2');
+
+      const btn3 = document.getElementById('btn3');
+
+      const btn4 = document.getElementById('btn4');
+
+      const btn5 = document.getElementById('btn5');
+
+      const btn6 = document.getElementById('btn6');
+
+      const btn7 = document.getElementById('btn7');
+
+      const btn8 = document.getElementById('btn8');
+
+      const btn9 = document.getElementById('btn9');
+
+      const btn10 = document.getElementById('btn10');
+
+      const btn11 = document.getElementById('btn11');
+
+      const btn12 = document.getElementById('btn12');
+
+      const btn13 = document.getElementById('btn13');
+
+      const btn14 = document.getElementById('btn14');
+
+      const btn15 = document.getElementById('btn15');
+
+      const btn16 = document.getElementById('btn16');
+
+      const btn17 = document.getElementById('btn17');
+
+      const btn18 = document.getElementById('btn18');
+
+      const btn19 = document.getElementById('btn19');
+
+      const btn20 = document.getElementById('btn20');
+
+      const circle = document.getElementById('circle');
+
+
+
+      const change = document.getElementById('change');
+      btn.addEventListener('click', () => {
+         change.style.backgroundColor = "green";
+      });
+
+      const change1 = document.getElementById('change');
+      btn1.addEventListener('click', () => {
+         change.style.backgroundColor = "purple";
+      });
+
+
+      const change2 = document.getElementById('change');
+      btn2.addEventListener('click', () => {
+         change.style.backgroundColor = "violet";
+      });
+
+
+      const change3 = document.getElementById('change');
+      btn3.addEventListener('click', () => {
+         change.style.backgroundColor = "pink";
+      });
+
+
+      const change4 = document.getElementById('change');
+      btn4.addEventListener('click', () => {
+         change.style.backgroundColor = "brown";
+      });
+
+
+      const change5 = document.getElementById('change');
+      btn5.addEventListener('click', () => {
+         change.style.backgroundColor = "red";
+      });
+
+
+      const change6 = document.getElementById('change');
+      btn6.addEventListener('click', () => {
+         change.style.backgroundColor = "aqua";
+      });
+
+
+      const change7 = document.getElementById('change');
+      btn7.addEventListener('click', () => {
+         change.style.backgroundColor = "chocolate";
+      });
+
+
+      const change8 = document.getElementById('change');
+      btn8.addEventListener('click', () => {
+         change.style.backgroundColor = "crimson";
+      });
+
+
+      const change9 = document.getElementById('change');
+      btn9.addEventListener('click', () => {
+         change.style.backgroundColor = "coral";
+      });
+
+
+      const change10 = document.getElementById('change');
+      btn10.addEventListener('click', () => {
+         change.style.backgroundColor = "chartreuse";
+      });
+
+
+      const change11 = document.getElementById('change');
+      btn11.addEventListener('click', () => {
+         change.style.backgroundColor = "cornflowerblue";
+      });
+
+
+      const change12 = document.getElementById('change');
+      btn12.addEventListener('click', () => {
+         change.style.backgroundColor = "yellowgreen";
+      });
+
+
+      const change13 = document.getElementById('change');
+      btn13.addEventListener('click', () => {
+         change.style.backgroundColor = "burlywood";
+      });
+
+
+      const change14 = document.getElementById('change');
+      btn14.addEventListener('click', () => {
+         change.style.backgroundColor = "turquoise";
+      });
+
+      const change15 = document.getElementById('change');
+      btn15.addEventListener('click', () => {
+         change.style.backgroundColor = "olive";
+      });
+
+
+      const change16 = document.getElementById('change');
+      btn16.addEventListener('click', () => {
+         change.style.backgroundColor = "teal";
+      });
+
+
+      const change17 = document.getElementById('change');
+      btn17.addEventListener('click', () => {
+         change.style.backgroundColor = "rosybrown";
+      });
+
+
+      const change18 = document.getElementById('change');
+      btn18.addEventListener('click', () => {
+         change.style.backgroundColor = "olive";
+      });
+
+      const change19 = document.getElementById('change');
+      btn19.addEventListener('click', () => {
+         change.style.backgroundColor = "orangered";
+      });
+
+      const change20 = document.getElementById('change');
+      btn20.addEventListener('click', () => {
+         change.style.backgroundColor = "rebeccapurple";
+      });
+
+
+   </script>
+</body>
+
+</html>
