@@ -28,7 +28,7 @@ Grey #ECF0F1
   General Styling 
 ********************************************************* */
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 </style>
@@ -441,7 +441,7 @@ blockquote p {
   font-size: 3.3rem !important;
   font-weight: 800 !important;
 	letter-spacing: 4px;
-	font-family: 'Rubik Dirt', cursive;
+	font-family: 'Titan One', cursive;
   animation: helloo 15s infinite linear !important;
 }
 
