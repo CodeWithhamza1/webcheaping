@@ -1332,12 +1332,13 @@ blockquote p {
   width: 100%;
   height: 500px;
   background-color: #e7eaf0;
-	filter: invert(1);
+	
 	
 }
 
 #cd-google-map {
   position: relative;
+	filter: invert(1);
 	
 }
 
