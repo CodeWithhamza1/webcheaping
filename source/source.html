@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source-Codes</title>
+    <link rel="shortcut icon" href="../images/favicons/fav3.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/82ae1f0515.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background: rgba(0, 0, 0, .599);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all .3s ease;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+  padding: 12px;
+  transition: all .3s ease;
+}
+
+        p{
+            font-size: 1.4em;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            color: lightblue;
+            letter-spacing: 3px;
+        }
+        h5{
+            color: whitesmoke;
+            letter-spacing: 3px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            text-align: center;
+        }
+        h1{
+            color: lightsalmon;
+            letter-spacing: 2px;
+            display: flex;
+            margin: 15px auto;
+            font-size: 2.7em;
+            font-weight: 650;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8,.card9, .card10, .card11, .card12, .card13, .card14, .card15, .card16, .card17, .card18, .card19, .card20, .card21, .card22,.card23,.card24,.card25,.card26,.card27,.card28,.card29,.card30,.card31,.card32,.card33,.card34,.card35,.card36,.card37,.card38,.card39,.card40{
+            display: inline-block;
+            box-shadow:   5px 5px 20px rgb(216, 206, 219)!important;
+            margin-top: 60px!important;
+            
+        }
+        .card1 img{
+            background-size: cover ;
+            width: 300px!important;
+            height: 220px!important;
+            
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card2{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+            
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card3 img{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+           
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card4 img{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+           
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card5 img{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+           
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card6 img{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card7 img{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+          
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card8 img{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+           
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .text{
+            font-size: 1.1em;
+            position: relative;
+            text-align: center;
+            color: whitesmoke;
+        }
+        h6{
+            color: wheat;
+            font-size: 1em;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px 0;
+        }
+        .card22{
+            background-size: cover ;
+            width: 300px;
+            height: 220px;
+            box-shadow:   5px 5px 20px rgb(162, 33, 201)!important;
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card22, img{
+            background-size: cover ;
+            width: 300px!important;
+            height: 220px!important;
+            
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        .card21 img{
+            background-size: cover ;
+            width: 300px!important;
+            height: 220px!important;
+            
+            border-radius: 20px;
+            margin: 15px;
+            display: inline-block;
+        }
+        h6 a{
+            color: orangered;
+            text-decoration: none;
+            transition: all .2s ease;
+        }
+        h6 a:hover{
+            color: whitesmoke;
+            text-decoration:4px solid underline darkorange;
+        }
+        ul{
+            display: inline-block;
+        }
+        li{
+            display: inline-block;
+        }
+        .input{
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .input input{
+            width: 60vw!important;
+            border: 3px solid orange;
+            outline: none;
+            height: 8vh;
+            font-size: 17px;
+            border-radius: 29px 12px 29px 12px;
+            background: linear-gradient(55deg, orangered, yellow);
+            box-shadow: 7px 7px 9px rgb(168, 155, 175),5px 7px  7px rgb(168, 155, 175);
+            padding: 20px;
+            margin: 20px 0 auto;
+            transition: all .3s ease;
+        }
+        .input input::placeholder{
+            color: black;
+            transition: all .4s ease;
+
+        }
+        .input input:focus{
+            transition: all .4s ease;
+            transform: translateY(3px);
+            color: black;
+            box-shadow: none;
+        }
+        input:hover::placeholder{
+            color: black;
+            transition: all .4s ease;
+        }
+        .iconhamza{
+            display: block;
+            position: relative;
+            right: 54px;
+            color: black;
+            background: transparent;
+            cursor: progress;
+            top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <main id="res">
+                 <h1>Source-Codes</h1>
+                 <h5>Click To Download All Code</h5>
+                 <h6>100% Virus Free and scanned by <a href="https://www.eset.com/int/home/online-scanner/">ESET Virus Scanner</a></h6>
+
+                 <div class="input" >
+                     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="SEARCH....."><i class="fa-solid fa-magnifying-glass iconhamza"></i>
+                 </div>
+
+                 <ul id="myUL">
+                    <li>
+                    <div class="card1">
+                        <img id="search" src="/projects/jscalc.jpg" alt="calculator"><div class="text">Beautiful Calculator</div>
+                    <a href="calc.rar" download><button class="btn"><i class="fa fa-download"></i> Download</button></a></div>
+                    <style>.btn{margin: 5px 100px; border: 1px solid gray; cursor: pointer;}</style></li>
+                    
+                        <li><div class="card3">
+                            <img src="/projects/cssfold.jpg" alt="animated foldable card"><div id="search" class="text">Beautiful CSS Animation foldable card</div>
+                            <a href="card.rar" download><button class="btn"><i class="fa fa-download"></i> Download</button></a></div><style>.btn{margin: 5px 100px;}</style>
+                        </div></li>
+                       <li> <div class="card4"><img src="/projects/cssneon.jpg" alt="neon button"><div id="search" class="text">Neon Button</div>
+                    <a href="neon.rar" download><button class="btn"><i class="fa fa-download"></i> Download</button></a>
+                    </div></li>
+                     <li>   <div class="card5"><img src="/projects/cssripple.jpg" alt="animated ripple"><div id="search" class="text">Ripple CSS</div>
+                    <a href="ripple.rar" download><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                        <li><div class="card6"><img src="/projects/rubber button.png" alt="rubberBand animation button"><div id="search" class="text">Beautiful Rubber animated button</div><a href="rubber.rar" download><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                        <li><div class="card7"><img src="/projects/cusscroll.jpg" alt="custom scrollBar"><div id="search" class="text">Custom Scroll Bar</div> <a href="scroll.rar" download><button class="btn"><i class="fa fa-download"></i> Download</button></a> </div></li>
+                       <li> <div class="card8"><img src="/projects/cssslider.jpg" alt="css animated slider"><div id="search" class="text">Beautiful CSS Slider</div><a href="slider.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div>
+                     </div></li>
+                     <li><div class="card9"><img src="/projects/cuttext.jpg" alt="css animated slider"><div id="search" class="text">Beautiful CutText</div><a href="cutout.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                     <li><div class="card9"><img src="/projects/filter.png" alt="css animated slider"><div id="search" class="text">JavaScript Filter</div><a href="filter.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card10"><img src="/projects/glowing.jpeg" alt="css animated slider"><div id="search" class="text">Beautiful glowing text</div><a href="glowingtext.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                     <li><div class="card11"><img src="/projects/gradient.jpg" alt="css animated slider"><div id="search" class="text">Beautiful CSS gradient text</div><a href="gradient.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card12"><img src="/projects/heroform.jpg" alt="css animated slider"><div id="search" class="text">Form on Hero</div><a href="formhero.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                     <li><div class="card13"><img src="/projects/hoverdrop.jpg" alt="css animated slider"><div id="search" class="text">Beautiful HoverDropDown</div><a href="hoverdrop.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card14"><img src="/projects/jscalc.jpg" alt="css animated slider"><div id="search" class="text">Beautiful JS Calculator</div><a href="calc.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card15"><img src="/projects/navbar.jpg" alt="css animated slider"><div  id="search"class="text">Responsive SideNav</div><a href="sidenav.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card16"><img src="/projects/paralax.jpg" alt="css animated slider"><div id="search" class="text">CSS Parallax Effects</div><a href="parallax.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card17"><img src="/projects/productcard.jpg" alt="css animated slider"><div id="search" class="text">Product Card</div><a href="procard.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card18"><img src="/projects/respform.jpg" alt="css animated slider"><div id="search" class="text">Responsive Form</div><a href="respform.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                     <li><div class="card19"><img src="/projects/skillbar.jpg" alt="css animated slider"><div id="search" class="text">Beautiful CSS skillbar</div><a href="skillbar.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                     <li><div class="card20"><img src="/projects/temprature.png" alt="css animated slider"><div id="search" class="text">JS temprature converter</div><a href="tempconv.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                     <li><div class="card21"><img src="/projects/todo.jpg" alt="css animated slider"><div id="search" class="text">Beautiful TODO List</div><a href="todolist.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    <li> <div class="card22"><img src="/projects/transparent.jpg" alt="css animated slider"><div id="search" class="text">Beautiful transparent text</div><a href="transtext.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                     <li><div class="card23"><img src="/projects/javascript-countdown-timer.jpg" alt="javascript-countdown-timer"><div id="search" class="text">Simple JavaScript CountDown Timer</div><a href="JavaScript CountDown Timer.rar"><button class="btn"><i class="fa fa-download"></i> Download</button></a></div></li>
+                     </div>
+                    
+                 </ul>
+                 
+
+            
+    </main>
+
+    <script>
+        function myFunction() {
+      var input, filter, ul, li, div, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("div")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+
+
+
+
+
+
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/lightcase.min.js"></script>
+</body>
+</html>
