@@ -1,7 +1,7 @@
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB6WUtcC-aGDibApLPMT-bLotDp-relo4o",
@@ -30,7 +30,7 @@ register.addEventListener('click', () => {
     const user = userCredential.user;
     // ...
     window.alert("Welcome "+ email.value);
-    window.location.assign("welcome.html");
+    window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/welcome.html");
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -55,7 +55,9 @@ signInWithEmailAndPassword(auth, logemail.value, logpassword.value)
     const user = userCredential.user;
     // ...
     alert("You signed in successfully " + logemail.value);
-    window.location.assign("welcome.html");
+    
+      window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/welcome.html");
+    
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -63,4 +65,14 @@ signInWithEmailAndPassword(auth, logemail.value, logpassword.value)
     alert(" error" + errorMessage);
   });
     
+});
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/welcome.html");
+  } else {
+    // User is not signed in.
+    window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/");
+  }
 });
