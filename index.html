@@ -23,6 +23,7 @@ Author URL: http://w3layouts.com
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
+      
       @font-face {
         font-family: myownFont;
         src: url(ChineseDragon.ttf);
@@ -50,6 +51,7 @@ Author URL: http://w3layouts.com
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
 
@@ -84,13 +86,19 @@ Author URL: http://w3layouts.com
             <a class="nav-link" href="portfolio/portfolio.html">PortFolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="source/source.html" target="_blank">Source-Codes</a>
+            <a class="nav-link" href="#sourcod">Source-Codes</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="https://codewithhamza12.blogspot.com" target="_blank">Our Blogs</a>
           </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link btn btn-success btn-sm" data-toggle="modal" data-target="#signupmodal">
+              Register
+            </button>
+          </li>
+          
         </ul>
-        
       </div>
     </div>
   </nav>
@@ -513,6 +521,67 @@ Author URL: http://w3layouts.com
             </section>
         </div>
     </div>
+
+
+    <section class="w3l-feature-4" id="sourcod">
+      <div class="grid top-bottom">
+        <div class="container">
+          <div class="heading text-center mx-auto">
+                    <h3 id="services" class="head text-white">Registration</h3>
+                    <p class="my-3 head text-white"></p>
+                  </div>
+          <div class="text-center mt-5 pt-3">
+            
+              <p class="text-white">
+                Please Register yourself to continue to awesome source-codes. <br>
+                Due to our private policies we register our customers to download free codes.
+              </p>
+              <a data-toggle="modal" data-target="#signupmodal" class="btn btn-success mybtn">Register Now!!</a>
+              
+              <style>
+                .w3l-feature-4 .top-bottom {
+    background:linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.50)), url(login.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    padding: 100px 0 120px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0; }
+    .w3l-feature-4 a{
+      color: whitesmoke;
+    }
+    .w3l-feature-4:hover a{
+      color: whitesmoke;
+    }
+    
+                .mybtn{
+                  margin-top: 10px;
+                }
+                html{
+                  scroll-behavior: smooth;
+                }
+                .iconh{
+                  color: var(--opposite-color);
+                }
+                .folls{
+                  color: whitesmoke;
+                }
+                .bgcolorg{
+                  background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.50));
+                }
+                .tcolor{
+                  color: white!important;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- Products4 block -->
 
 <section class="w3l-testimonials bgcolorg" id="testimonials">
@@ -701,6 +770,131 @@ Author URL: http://w3layouts.com
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+
+
+
+
+<!-- Modal -->
+
+
+
+
+
+<div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupmodallabel">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="container my-20">
+          <div class="form-group my-20">
+            <div class="form-group my-20">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" id="upname" aria-describedby="name" placeholder="Enter Name" autocomplete="off" required>
+            </div>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="upemail" aria-describedby="emailHelp" placeholder="Enter email" required autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="uppass" placeholder="Password" required autocomplete="off">
+          </div>
+          <button type="button" class="btn btn-outline-danger" id="signup">Sign Up</button>
+        </form>
+        <div class="loginhava">
+          Have an account?<a href="" data-toggle="modal" data-target="#loginmodal"> login</a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginmodal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signinmodal">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form id="loginform" class="container my-20">
+    
+              <div class="form-group my-20">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="logemail" aria-describedby="emailHelp" placeholder="Enter email" required autocomplete="off">
+                
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="logpass" required autocomplete="off" placeholder="Password">
+              </div>
+              <button type="button" class="btn btn-outline-primary" id="signin">SignIn</button>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" data-toggle="modal" data-target="#resetmodal">Forgot Password</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+<!-- Modal -->
+<div class="modal fade" id="resetmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="resetemailform" class="container my-20">
+      
+          <div class="form-group my-20">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="resetemail" aria-describedby="emailHelp" placeholder="Enter email" required autocomplete="off">
+          <button type="button" class="btn btn-primary" id="reset">Send Link</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+    
+  </script>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="reset.js"></script>
 
 <!-- Smooth scrolling -->
 
