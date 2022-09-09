@@ -67,12 +67,25 @@ signInWithEmailAndPassword(auth, logemail.value, logpassword.value)
     
 });
 
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-    window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/welcome.html");
-  } else {
-    // User is not signed in.
-    window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/");
-  }
+
+
+
+auth.onAuthStateChanged(user =>{
+    if(user){
+      window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/welcome.html");
+    }
+    else{
+      return
+    }
+})
+
+
+
+
+
+
+const out = document.getElementById('signout');
+out.addEventListener('click', (e)=>{
+  e.preventDefault();
+  out.signOut();
 });
