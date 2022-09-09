@@ -53,7 +53,29 @@ Author URL: http://w3layouts.com
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
-  <body>
+  <body onload="myfunc()">
+
+    <div id="loader-overlay">
+      <p class="text-white fonton myload">LOADING</p>
+      <div class="loader">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  
+    <script>
+      let loaders = document.getElementById('loader-overlay');
+  
+      function myfunc() {
+  
+        window.onload(loaders.style.display = "none");
+      };
+  
+    </script>
+  
 
 <section class="w3l-bootstrap-header">
   <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
@@ -92,7 +114,6 @@ Author URL: http://w3layouts.com
           <li class="nav-item">
             <a class="nav-link" href="https://codewithhamza12.blogspot.com" target="_blank">Our Blogs</a>
           </li>
-          
         </ul>
       </div>
     </div>
@@ -833,6 +854,7 @@ Author URL: http://w3layouts.com
   </script>
   <script type="module" src="app.js"></script>
   <script type="module" src="reset.js"></script>
+
 
 <!-- Smooth scrolling -->
 
