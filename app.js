@@ -70,14 +70,14 @@ signInWithEmailAndPassword(auth, logemail.value, logpassword.value)
 
 
 
-auth.onAuthStateChanged(user =>{
-    if(user){
-      window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/welcome.html");
-    }
-    else{
-      return
-    }
-})
+// auth.onAuthStateChanged(user =>{
+//     if(user){
+//       window.location.assign("https://codewithhamza1.github.io/codewithhamza.com/welcome.html");
+//     }
+//     else{
+//       return
+//     }
+// })
 
 
 
