@@ -32,7 +32,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         body{
-            background-image:linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.80)), url(bgso.jpg);
+           background-image:linear-gradient(55deg, #380036 13%, #0CBABA 26%, #000000 50%, #130F40 65%, #0D324D 80%, #7F5A83 100%);
             background-repeat: repeat;
             background-size: contain;
         }
@@ -256,10 +256,125 @@
             cursor: progress;
             top: 10px;
         }
+         .myload {
+  height: 50px;
+  left: 50%;
+  margin: -25px 0 0 -75px;
+  position: absolute;
+  top: 40%;
+  font-size: 30px;
+  width: 150px;
+}
+
+#loader-overlay {
+  width: 100%;
+  height: 100%;
+  animation: bgchange 5s infinite ease;
+  transition: all 5s ease-out;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 9999;
+}
+
+@keyframes bgchange {
+  from{
+    background: linear-gradient(45deg, #380036, #0CBABA);
+    filter: blur(1);
+  }
+  to{
+    background: linear-gradient(45deg,#0D324D ,#7F5A83 );
+    filter: blur(.6);
+  }
+}
+
+.loader {
+  height: 50px;
+  left: 50%;
+  margin: -25px 0 0 -75px;
+  position: absolute;
+  top: 50%;
+  width: 150px;
+}
+
+.loader .bar {
+  background-color: #69C98C;
+  font-size: 0;
+  height: 6px;
+  border-radius: 3px;
+  opacity: 0;
+  width: 25px;
+  -webkit-animation-duration: 1.7s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: subtleIn;
+  -webkit-animation-timing-function: ease-in-out;
+  display: inline-block;
+}
+
+.loader .bar:nth-child(1) {
+  -webkit-animation-delay: 0s;
+}
+
+.loader .bar:nth-child(2) {
+  background-color: #1abc9c;
+  -webkit-animation-delay: .3s;
+}
+
+.loader .bar:nth-child(3) {
+  background-color: #1AB4BC;
+  -webkit-animation-delay: .6s;
+}
+
+.loader .bar:nth-child(4) {
+  background-color: #1AA1BC;
+  -webkit-animation-delay: .9s;
+}
+
+.loader .bar:nth-child(5) {
+  background-color: #1A7EBC;
+  -webkit-animation-delay: 1.2s;
+}
+
+@-webkit-keyframes subtleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(300%);
+    transform: translateY(300%);
+  }
+
+  30% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
     </style>
 
 </head>
-<body>
+<body onclick="myfunc()">
+     <div id="loader-overlay">
+    <p class="text-white fonton myload">LOADING</p>
+    <div class="loader">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <script>
+    let loaders = document.getElementById('loader-overlay');
+
+    function myfunc() {
+
+      window.onload(loaders.style.display = "none");
+    };
+
+  </script>
     <main id="res">
                  <h1>Source-Codes</h1>
                  <h5>Click To Download All Code</h5>
