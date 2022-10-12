@@ -252,7 +252,12 @@ Please be also aware that when you leave our website, other sites may have diffe
   <i class="fas fa-chevron-up"></i>
 </a>
 
-
+  <script>
+  // //Hide the right click menu
+ document.addEventListener("contextmenu", function (e){
+     e.preventDefault();
+ }, false);
+  </script>
 
    
     <script src="assets/vendors/js/glightbox.min.js"></script>
